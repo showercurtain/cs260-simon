@@ -1,3 +1,25 @@
 #scores-nav-button {
     background-color: #424649;
 }
+
+#content {
+    padding: 10%;
+    padding-top: 100px;
+    text-align: center;
+}
+
+#score-label {
+    font-weight: 600;
+    font-size: 24pt;
+}
+
+#score-table {
+    background-color: #3d3d3d;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#score-table tbody {
+    background-color: gray;
+}
