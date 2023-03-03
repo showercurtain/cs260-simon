@@ -5,19 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/scores.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
     <title>Simon</title>
 </head>
 <body>
     <div id="header">
-        <h1>Simon®</h1>
+        <div id="header-name">Simon®</div>
         <div id="header-nav">
-            <a class="nav-button" href="/">Home</a>
-            <a class="nav-button" href="/play">Play</a>
-            <a class="nav-button" href="/scores">Scores</a>
-            <a class="nav-button" href="/about">About</a>
+            <a class="nav-button btn btn-dark" id="home-nav-button" href="/">Home</a>
+            <a class="nav-button btn btn-dark" id="play-nav-button" href="/play">Play</a>
+            <a class="nav-button btn btn-dark" id="scores-nav-button" href="/scores">Scores</a>
+            <a class="nav-button btn btn-dark" id="about-nav-button" href="/about">About</a>
         </div>
     </div>
-    <hr> 
     <div id="content">
         Top 10 scores:
         <table class="score-table">
@@ -34,7 +40,6 @@
             </tbody>
         </table>
     </div>
-    <hr>
     <div id="footer">
         Made by <a href="https://github.com/showercurtain">Sean Cowley</a>
     </div>

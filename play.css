@@ -1,0 +1,14 @@
+#play-nav-button {
+    background-color: #424649;
+}
+
+#simon-buttons {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.simon-button {
+    max-height: 100px;
+}

@@ -1,18 +1,61 @@
-/* I'm sorry, I had to */
-/* Only basic styles for now */
+#header {
+    display: flex;
+    flex-direction: row;
+    background-color: #232323;
+    color: white;
+    height: 50px;
+} 
 
-/* shared */
-/* index */
-/* about */
-/* play */
-#simon-buttons {
-    display: grid;
-    grid-template-columns: 100px 100px;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+#header-name {
+    flex: 2;
+    font-size: 25pt;
+    font-weight: 600;
+    text-align: center;
+    height: 100%;
+    background-color: #3d3d3d;
 }
 
-.simon-button {
-    max-height: 100px;
+#header-nav {
+    flex: 6;
+    height: 100%;
+    padding: 6px;
 }
-/* scores */
+
+.flex-gap {
+    flex: 1;
+}
+
+#content {
+    flex: 1;
+    background-color: #333;
+    color: white;
+}
+
+#footer {
+    background-color: #3d3d3d;
+    height: 30px;
+    justify-content: left;
+    color: gray;
+}
+
+#footer a {
+    color: gray;
+    text-decoration: none;
+    transition: linear 0.1s;
+}
+
+#footer a:hover {
+    color: lightgray;
+    transition: linear 0.1s;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
