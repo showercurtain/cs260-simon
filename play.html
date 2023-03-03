@@ -25,29 +25,23 @@
         </div>
     </div>
     <div id="content">
-        Player: <span id="player">Mystery player</span><br>
-        Score: <span id="score">0</span><br>
-        <button id="reset-button" onclick="console.log('reset I guess?')">Reset</button><br>
-        <div id="simon-buttons">
-            <div class="simon-button">
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                    <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green"></path>
-                </svg>
+        <div id="game">
+            <div id="simon-buttons">
+                <button id="simon-button-tl"></button>
+                <button id="simon-button-tr"></button>
+                <button id="simon-button-bl"></button>
+                <button id="simon-button-br"></button>
             </div>
-            <div class="simon-button">
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                    <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red"></path>
-                </svg>
+            <div id="simon-mask">
+                <div id="button-mask-tl"></div>
+                <div id="button-mask-tr"></div>
+                <div id="button-mask-bl"></div>
+                <div id="button-mask-br"></div>
             </div>
-            <div class="simon-button">
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                    <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue"></path>
-                </svg>
-            </div>
-            <div class="simon-button">
-                <svg aria-hidden="true" viewBox="0 0 100 100" height="100" width="100">
-                    <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow"></path>
-                </svg>
+            <div id="game-center">
+                <div style="font-size: 2em; font-weight: bold">Simon®</div>
+                <div id="score">--</div>
+                <button class="btn btn-dark" style="margin-top:8px">Reset</button>
             </div>
         </div>
     </div>
